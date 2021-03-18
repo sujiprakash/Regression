@@ -1,0 +1,713 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-03-18T15:27:59.150Z",
+        "line": 21,
+        "name": "To validate Booking Hotel page",
+        "description": "",
+        "id": "to-validate-booking-hotel-page;to-validate-booking-hotel-page;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 45326025900,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User is in Adactin Login page",
+            "match": {
+              "location": "LoginSteps.user_is_in_Adactin_Login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1060733100,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User enter valid \"Aadhvik3\" and \"karthik-5\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Aadhvik3\"",
+                  "offset": 17
+                },
+                {
+                  "val": "\"karthik-5\"",
+                  "offset": 32
+                }
+              ],
+              "location": "LoginSteps.user_enter_valid_and(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 764922200,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User click Login button",
+            "match": {
+              "location": "LoginSteps.user_click_Login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 8945500,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User should be able to enter search hotel page",
+            "match": {
+              "location": "LoginSteps.user_should_be_able_to_enter_search_hotel_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1170673900,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User should be able to enter \"Sydney\",\"Hotel Creek\",\"Double\",\"1\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Sydney\"",
+                  "offset": 29
+                },
+                {
+                  "val": "\"Hotel Creek\"",
+                  "offset": 38
+                },
+                {
+                  "val": "\"Double\"",
+                  "offset": 52
+                },
+                {
+                  "val": "\"1\"",
+                  "offset": 61
+                }
+              ],
+              "location": "SearchHotel.user_should_be_able_to_enter(String,String,String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 115774700,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User should be able to enter \"19/03/2021\",\"20/03/2021\" dates",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"19/03/2021\"",
+                  "offset": 29
+                },
+                {
+                  "val": "\"20/03/2021\"",
+                  "offset": 42
+                }
+              ],
+              "location": "SearchHotel.user_should_be_able_to_enter_dates(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 174966800,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User should be able to enter \"2\",\"1\" number",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"2\"",
+                  "offset": 29
+                },
+                {
+                  "val": "\"1\"",
+                  "offset": 33
+                }
+              ],
+              "location": "SearchHotel.user_should_be_able_to_enter_number(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 535434300,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User should be able to click Search",
+            "match": {
+              "location": "SearchHotel.user_should_be_able_to_click_Search()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#radiobutton_0\"}\n  (Session info: chrome\u003d89.0.4389.90)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-47PN41M\u0027, ip: \u0027192.168.1.8\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_281\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.90, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\\Users\\SUREND~1\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:52161}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: d9aab66cd853630a1d62f100c64d11b9\n*** Element info: {Using\u003did, value\u003dradiobutton_0}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat java.lang.reflect.Constructor.newInstance(Unknown Source)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)\r\n\tat org.openqa.selenium.By$ById.findElement(By.java:188)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy16.click(Unknown Source)\r\n\tat org.stepdefinition.BaseClass.btnClick(BaseClass.java:31)\r\n\tat org.stepdefinition.SelectHotel.user_should_be_able_to_select_hotel(SelectHotel.java:13)\r\n\tat ✽.User should be able to select hotel(file:src/test/resources/FeatureFiles/Booking.feature:12)\r\n",
+              "duration": 999504300,
+              "status": "failed"
+            },
+            "line": 12,
+            "name": "User should be able to select hotel",
+            "match": {
+              "location": "SelectHotel.user_should_be_able_to_select_hotel()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 663100,
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "User click continue button",
+            "match": {
+              "location": "SelectHotel.user_click_continue_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 741700,
+              "status": "skipped"
+            },
+            "line": 14,
+            "name": "User enter \"Suji\",\"Karthik\",\"Perambur\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Suji\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"Karthik\"",
+                  "offset": 18
+                },
+                {
+                  "val": "\"Perambur\"",
+                  "offset": 28
+                }
+              ],
+              "location": "BookingClass.user_enter(String,String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 816000,
+              "status": "skipped"
+            },
+            "line": 15,
+            "name": "User enter \"1234567890123456\",\"VISA\",\"11\",\"2022\",\"456\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"1234567890123456\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"VISA\"",
+                  "offset": 30
+                },
+                {
+                  "val": "\"11\"",
+                  "offset": 37
+                },
+                {
+                  "val": "\"2022\"",
+                  "offset": 42
+                },
+                {
+                  "val": "\"456\"",
+                  "offset": 49
+                }
+              ],
+              "location": "BookingClass.user_enter(String,String,String,String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 541400,
+              "status": "skipped"
+            },
+            "line": 16,
+            "name": "User click BookNow button",
+            "match": {
+              "location": "BookingClass.user_click_BookNow_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 490800,
+              "status": "skipped"
+            },
+            "line": 17,
+            "name": "User should get OrderNumber",
+            "match": {
+              "location": "BookingClass.user_should_get_OrderNumber()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "To validate Booking Hotel page",
+    "description": "",
+    "id": "to-validate-booking-hotel-page",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/FeatureFiles/Booking.feature",
+    "tags": []
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2021-03-18T15:28:49.368Z",
+        "line": 13,
+        "name": "To validate Login functionality using valid credentials",
+        "description": "",
+        "id": "to-validate-login-functionality;to-validate-login-functionality-using-valid-credentials;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 31267599300,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User is in Adactin Login page",
+            "match": {
+              "location": "LoginSteps.user_is_in_Adactin_Login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 148661300,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User enter valid \"Aadhvik3\" and \"karthik-5\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Aadhvik3\"",
+                  "offset": 17
+                },
+                {
+                  "val": "\"karthik-5\"",
+                  "offset": 32
+                }
+              ],
+              "location": "LoginSteps.user_enter_valid_and(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 740815900,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User click Login button",
+            "match": {
+              "location": "LoginSteps.user_click_Login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4771700,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User should be able to enter search hotel page",
+            "match": {
+              "location": "LoginSteps.user_should_be_able_to_enter_search_hotel_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "To validate Login functionality",
+    "description": "",
+    "id": "to-validate-login-functionality",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/FeatureFiles/Login.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-03-18T15:29:21.536Z",
+        "line": 15,
+        "name": "To validate Search Hotel page",
+        "description": "",
+        "id": "to-validate-search-hotel-page;to-validate-search-hotel-page;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 40329922400,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User is in Adactin Login page",
+            "match": {
+              "location": "LoginSteps.user_is_in_Adactin_Login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 174710300,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User enter valid \"Aadhvik3\" and \"karthik-5\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Aadhvik3\"",
+                  "offset": 17
+                },
+                {
+                  "val": "\"karthik-5\"",
+                  "offset": 32
+                }
+              ],
+              "location": "LoginSteps.user_enter_valid_and(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 621903500,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User click Login button",
+            "match": {
+              "location": "LoginSteps.user_click_Login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5072000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User should be able to enter search hotel page",
+            "match": {
+              "location": "LoginSteps.user_should_be_able_to_enter_search_hotel_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 385680100,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User should be able to enter \"Sydney\",\"Hotel Creek\",\"Double\",\"1\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Sydney\"",
+                  "offset": 29
+                },
+                {
+                  "val": "\"Hotel Creek\"",
+                  "offset": 38
+                },
+                {
+                  "val": "\"Double\"",
+                  "offset": 52
+                },
+                {
+                  "val": "\"1\"",
+                  "offset": 61
+                }
+              ],
+              "location": "SearchHotel.user_should_be_able_to_enter(String,String,String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 114328600,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User should be able to enter \"19/03/2021\",\"20/03/2021\" dates",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"19/03/2021\"",
+                  "offset": 29
+                },
+                {
+                  "val": "\"20/03/2021\"",
+                  "offset": 42
+                }
+              ],
+              "location": "SearchHotel.user_should_be_able_to_enter_dates(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 176405300,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User should be able to enter \"2\",\"1\" number",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"2\"",
+                  "offset": 29
+                },
+                {
+                  "val": "\"1\"",
+                  "offset": 33
+                }
+              ],
+              "location": "SearchHotel.user_should_be_able_to_enter_number(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 45691900,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User should be able to click Search",
+            "match": {
+              "location": "SearchHotel.user_should_be_able_to_click_Search()"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "To validate Search Hotel page",
+    "description": "",
+    "id": "to-validate-search-hotel-page",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/FeatureFiles/Search.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-03-18T15:30:03.397Z",
+        "line": 18,
+        "name": "To validate Select Hotel page",
+        "description": "",
+        "id": "to-validate-select-hotel-page;to-validate-select-hotel-page;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 18790919800,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User is in Adactin Login page",
+            "match": {
+              "location": "LoginSteps.user_is_in_Adactin_Login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 293268100,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User enter valid \"Aadhvik3\" and \"karthik-5\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Aadhvik3\"",
+                  "offset": 17
+                },
+                {
+                  "val": "\"karthik-5\"",
+                  "offset": 32
+                }
+              ],
+              "location": "LoginSteps.user_enter_valid_and(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2274933900,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User click Login button",
+            "match": {
+              "location": "LoginSteps.user_click_Login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6358000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User should be able to enter search hotel page",
+            "match": {
+              "location": "LoginSteps.user_should_be_able_to_enter_search_hotel_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1214222100,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User should be able to enter \"Sydney\",\"Hotel Creek\",\"Double\",\"1\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Sydney\"",
+                  "offset": 29
+                },
+                {
+                  "val": "\"Hotel Creek\"",
+                  "offset": 38
+                },
+                {
+                  "val": "\"Double\"",
+                  "offset": 52
+                },
+                {
+                  "val": "\"1\"",
+                  "offset": 61
+                }
+              ],
+              "location": "SearchHotel.user_should_be_able_to_enter(String,String,String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 660295300,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User should be able to enter \"19/03/2021\",\"20/03/2021\" dates",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"19/03/2021\"",
+                  "offset": 29
+                },
+                {
+                  "val": "\"20/03/2021\"",
+                  "offset": 42
+                }
+              ],
+              "location": "SearchHotel.user_should_be_able_to_enter_dates(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 172019100,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User should be able to enter \"2\",\"1\" number",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"2\"",
+                  "offset": 29
+                },
+                {
+                  "val": "\"1\"",
+                  "offset": 33
+                }
+              ],
+              "location": "SearchHotel.user_should_be_able_to_enter_number(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1456299700,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "User should be able to click Search",
+            "match": {
+              "location": "SearchHotel.user_should_be_able_to_click_Search()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 71029400,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User should be able to select hotel",
+            "match": {
+              "location": "SelectHotel.user_should_be_able_to_select_hotel()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 493908000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User click continue button",
+            "match": {
+              "location": "SelectHotel.user_click_continue_button()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "To validate Select Hotel page",
+    "description": "",
+    "id": "to-validate-select-hotel-page",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/FeatureFiles/Select.feature",
+    "tags": []
+  }
+]

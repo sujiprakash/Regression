@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.tablesorter.min.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script>
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+  
+<title>Cucumber Reports  - Steps Overview</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+                <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation"     class="active" ><a href="overview-steps.html">Steps</a></li>
+                <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+    
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+            <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>Adactin</td>
+            <td>18 Mar 2021, 21:00</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+      </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Steps Statistics</h2>
+          <p>The following graph shows step statistics for this build. Below list is based on results.
+ step does not provide information about result then is not listed below.
+ Additionally @Before and @After are not counted because they are part of the scenarios, not steps.</p>
+      </div>
+</div>
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table id="tablesorter" class="stats-table table-hover">
+
+        <thead>
+          <tr class="header">
+            <th>Implementation</th>
+            <th>Occurrences</th>
+            <th>Average duration</th>
+            <th>Max duration</th>
+            <th>Total durations</th>
+            <th>Ratio</th>
+          </tr>
+        </thead>
+
+        <tbody>
+                      <tr>
+              <td class="location">BookingClass.user_click_BookNow_button()</td>
+              <td>1</td>
+              <td class="duration" data-value="541400">0.000</td>
+              <td class="duration" data-value="541400">0.000</td>
+              <td class="duration" data-value="541400">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">BookingClass.user_enter(String,String,String)</td>
+              <td>1</td>
+              <td class="duration" data-value="741700">0.000</td>
+              <td class="duration" data-value="741700">0.000</td>
+              <td class="duration" data-value="741700">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">BookingClass.user_enter(String,String,String,String,String)</td>
+              <td>1</td>
+              <td class="duration" data-value="816000">0.000</td>
+              <td class="duration" data-value="816000">0.000</td>
+              <td class="duration" data-value="816000">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">BookingClass.user_should_get_OrderNumber()</td>
+              <td>1</td>
+              <td class="duration" data-value="490800">0.000</td>
+              <td class="duration" data-value="490800">0.000</td>
+              <td class="duration" data-value="490800">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">LoginSteps.user_click_Login_button()</td>
+              <td>4</td>
+              <td class="duration" data-value="1100643875">1.100</td>
+              <td class="duration" data-value="1100643875">2.274</td>
+              <td class="duration" data-value="4402575500">4.402</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">LoginSteps.user_enter_valid_and(String,String)</td>
+              <td>4</td>
+              <td class="duration" data-value="419343200">0.419</td>
+              <td class="duration" data-value="419343200">1.060</td>
+              <td class="duration" data-value="1677372800">1.677</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">LoginSteps.user_is_in_Adactin_Login_page()</td>
+              <td>4</td>
+              <td class="duration" data-value="33928616850">33.928</td>
+              <td class="duration" data-value="33928616850">45.326</td>
+              <td class="duration" data-value="135714467400">2:15.714</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">LoginSteps.user_should_be_able_to_enter_search_hotel_page()</td>
+              <td>4</td>
+              <td class="duration" data-value="6286800">0.006</td>
+              <td class="duration" data-value="6286800">0.008</td>
+              <td class="duration" data-value="25147200">0.025</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">SearchHotel.user_should_be_able_to_click_Search()</td>
+              <td>3</td>
+              <td class="duration" data-value="679141966">0.679</td>
+              <td class="duration" data-value="679141966">1.456</td>
+              <td class="duration" data-value="2037425900">2.037</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">SearchHotel.user_should_be_able_to_enter(String,String,String,String)</td>
+              <td>3</td>
+              <td class="duration" data-value="923525366">0.923</td>
+              <td class="duration" data-value="923525366">1.214</td>
+              <td class="duration" data-value="2770576100">2.770</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">SearchHotel.user_should_be_able_to_enter_dates(String,String)</td>
+              <td>3</td>
+              <td class="duration" data-value="296799533">0.296</td>
+              <td class="duration" data-value="296799533">0.660</td>
+              <td class="duration" data-value="890398600">0.890</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">SearchHotel.user_should_be_able_to_enter_number(String,String)</td>
+              <td>3</td>
+              <td class="duration" data-value="174463733">0.174</td>
+              <td class="duration" data-value="174463733">0.176</td>
+              <td class="duration" data-value="523391200">0.523</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">SelectHotel.user_click_continue_button()</td>
+              <td>2</td>
+              <td class="duration" data-value="247285550">0.247</td>
+              <td class="duration" data-value="247285550">0.493</td>
+              <td class="duration" data-value="494571100">0.494</td>
+              <td class="failed">50.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">SelectHotel.user_should_be_able_to_select_hotel()</td>
+              <td>2</td>
+              <td class="duration" data-value="535266850">0.535</td>
+              <td class="duration" data-value="535266850">0.999</td>
+              <td class="duration" data-value="1070533700">1.070</td>
+              <td class="failed">50.00%</td>
+            </tr>
+                  </tbody>
+
+        <tfoot class="total">
+          <tr>
+            <td>14</td>
+            <td>36</td>
+            <td class="duration">4.155</td>
+            <td class="duration">2:15.714</td>
+            <td class="duration">2:29.609</td>
+            <td>Totals</td>
+          </tr>
+        </tfoot>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>
