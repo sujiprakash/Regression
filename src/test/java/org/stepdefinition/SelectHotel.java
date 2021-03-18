@@ -8,8 +8,9 @@ public class SelectHotel extends BaseClass{
 
 	SelectPojo slp;
 	@Then("User should be able to select hotel")
-	public void user_should_be_able_to_select_hotel() {
+	public void user_should_be_able_to_select_hotel() throws InterruptedException {
 	    slp=new SelectPojo();
+	    Thread.sleep(3000);
 		btnClick(slp.getSelectRadio());
 	}
 
